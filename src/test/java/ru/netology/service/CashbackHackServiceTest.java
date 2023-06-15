@@ -13,8 +13,9 @@ public class CashbackHackServiceTest {
         int expected = 500;
         int actual = service.remain(amount);
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
+
     @org.junit.Test
     public void testForDownBorder() {
         CashbackHackService service = new CashbackHackService();
@@ -23,7 +24,7 @@ public class CashbackHackServiceTest {
         int expected = 1_000;
         int actual = service.remain(amount);
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @org.junit.Test
@@ -34,6 +35,6 @@ public class CashbackHackServiceTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 }
